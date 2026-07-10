@@ -8,7 +8,7 @@
             </div>
             <div class="sidebar-text">
                 <h2 class="font-bold text-white">{{ config('app.name', 'Laravel') }}</h2>
-                <p class="text-xs text-white/60">Admin Panel</p>
+                <p class="text-xs text-white/60">{{ config('app.company_name', 'Laravel') }}</p>
             </div>
         </div>
     </div>

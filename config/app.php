@@ -123,8 +123,23 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'file'),
     ],
 
-    /**
-     * Set domain for generate email
-     */
+    /*
+    |--------------------------------------------------------------------------
+    | Application Domain
+    |--------------------------------------------------------------------------
+    |
+    | This value is used to generate URLs in the application.
+    |
+    */
     'domain' => env('APP_DOMAIN', 'localhost.test'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Company Name
+    |--------------------------------------------------------------------------
+    |
+    | This value is used to display the company name in the application.
+    |
+    */
+    'company_name' => env('COMPANY_NAME', 'PERUMDA BPR Bank Kota Kediri'),
 ];
