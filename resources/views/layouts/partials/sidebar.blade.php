@@ -1,5 +1,5 @@
 <aside class="admin-sidebar" id="adminSidebar">
-    <div class="sidebar-header justify-start">
+    <div class="sidebar-header justify-center">
         <div class="flex items-center gap-3">
             <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
