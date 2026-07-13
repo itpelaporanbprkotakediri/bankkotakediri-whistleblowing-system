@@ -1,4 +1,4 @@
-@extends('layouts.guest')
+@extends('layouts.guest', ['pageTitle' => 'Panduan'])
 
 @push('styles')
     <style>

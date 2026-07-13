@@ -1,4 +1,4 @@
-@extends('layouts.guest')
+@extends('layouts.guest', ['pageTitle' => 'Beranda'])
 
 @section('content')
     <!-- HERO SECTION -->
