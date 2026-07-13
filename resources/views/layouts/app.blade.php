@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/logo/logo-bpr-kota-square.ico') }}">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/lib/base/css/style.css') }}">
     
