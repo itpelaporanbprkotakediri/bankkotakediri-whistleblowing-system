@@ -164,6 +164,16 @@ return [
             'hari_selesai' => 'Jumat',
             'jam_buka' => '08.00',
             'jam_tutup' => '16.00'
+        ],
+        'tagline' => [
+            'first' => 'Menjaga Integritas',
+            'second' => 'Membangun Kepercayaan'
+        ],
+        'description' => [
+            'auth' => 'Panel administrasi Whistleblowing System. Akses terbatas hanya untuk personel yang berwenang. Seluruh aktivitas dicatat dalam sistem audit.'
+        ],
+        'features' => [
+            'Enkripsi End-to-End', 'Audit Trail'
         ]
     ],
     'company_name' => env('COMPANY_NAME', 'PERUMDA BPR Bank Kota Kediri'),

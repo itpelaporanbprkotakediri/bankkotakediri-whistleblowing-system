@@ -104,8 +104,8 @@
                         </svg>
                     </div>
                     <div>
-                        <h1 class="text-xl font-bold text-gray-900">Nama Aplikasi</h1>
-                        <p class="text-xs text-gray-500">Slogan Aplikasi / Nama Perusahaan</p>
+                        <h1 class="text-xl font-bold text-gray-900">Whistleblowing System</h1>
+                        <p class="text-xs text-gray-500">{{ config('app.company.name') }}</p>
                     </div>
                 </div>
 
@@ -125,34 +125,30 @@
                     </svg>
                 </div>
                 <div>
-                    <h1 class="text-xl font-bold text-white">Nama Aplikasi</h1>
-                    <p class="text-sm text-white/70">Slogan Aplikasi / Nama Perusahaan</p>
+                    <h1 class="text-xl font-bold text-white">Whistleblowing System</h1>
+                    <p class="text-sm text-white/70">{{ config('app.company.name') }}</p>
                 </div>
             </div>
 
             <!-- Center Content -->
             <div class="relative z-10 max-w-lg">
                 <h2 class="text-4xl font-bold mb-4 leading-tight text-white">
-                    Slogan Aplikasi 1,<br>
-                    <span class="text-yellow-300">Slogan Aplikasi 2.</span>
+                    {{ config('app.company.tagline.first') }},<br>
+                    <span class="text-yellow-300">{{ config('app.company.tagline.second') }}.</span>
                 </h2>
                 <p class="text-lg text-white/80 leading-relaxed mb-8">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                    {{ config('app.company.description.auth') }}
                 </p>
 
                 <div class="flex items-center gap-6">
-                    <div class="flex items-center gap-2">
-                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                        </svg>
-                        <span class="text-sm text-white/90">Fitur 1</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                        </svg>
-                        <span class="text-sm text-white/90">Fitur 2</span>
-                    </div>
+                    @foreach(config('app.company.features') as $feature)
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                            <span class="text-sm text-white/90">{{ $feature }}</span>
+                        </div>
+                    @endforeach
                 </div>
             </div>
 
