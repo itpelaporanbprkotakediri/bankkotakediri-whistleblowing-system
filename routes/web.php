@@ -4,8 +4,12 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return redirect()->route('login');
-});
+    return view('guest.beranda');
+})->name('guest.beranda');
+
+Route::get('/panduan', function () {
+    return view('guest.panduan');
+})->name('guest.panduan');
 
 Route::get('/dashboard', function () {
     return view('dashboard.index');
