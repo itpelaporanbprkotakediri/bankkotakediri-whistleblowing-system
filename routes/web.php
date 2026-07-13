@@ -6,9 +6,9 @@ use Illuminate\Support\Facades\Route;
 Route::name('guest.')->group(function () {
     Route::get('/', fn() => view('guest.beranda'))->name('beranda');
     Route::get('/lapor', fn() => abort(404))->name('lapor');
-    Route::get('/cek-status', fn() => abort(404))->name('cek-status');
     Route::get('/panduan', fn() => view('guest.panduan'))->name('panduan');
     Route::get('/kontak', fn() => view('guest.kontak'))->name('kontak');
+    Route::get('/cek-status', fn() => view('guest.cek-status'))->name('cek-status');
 });
 
 Route::get('/dashboard', function () {
