@@ -345,7 +345,7 @@
                                 <div class="faq-answer-content">
                                     Setelah mengirim laporan, Anda akan menerima <strong>kode tracking unik</strong> (contoh: WBS-XXXXXXXX). 
                                     Simpan kode ini dengan aman. Anda dapat menggunakan kode tersebut di halaman 
-                                    <a href="cek-status.html" class="text-blue-600 hover:text-blue-800 font-medium">Cek Status Laporan</a> 
+                                    <a href="{{ route('guest.cek-status') }}" class="text-blue-600 hover:text-blue-800 font-medium">Cek Status Laporan</a> 
                                     untuk memantau perkembangan laporan Anda secara real-time.
                                 </div>
                             </div>
@@ -480,13 +480,13 @@
                         Jika Anda memiliki pertanyaan lain atau membutuhkan bantuan, jangan ragu untuk menghubungi kami
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="kontak.html" class="btn bg-white text-blue-700 hover:bg-gray-100 px-8 py-4 text-lg">
+                        <a href="{{ route('guest.kontak') }}" class="btn bg-white text-blue-700 hover:bg-gray-100 px-8 py-4 text-lg">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                             </svg>
                             Hubungi Kami
                         </a>
-                        <a href="lapor.html" class="btn bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20 px-8 py-4 text-lg">
+                        <a href="{{ route('guest.lapor') }}" class="btn bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20 px-8 py-4 text-lg">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
                             </svg>

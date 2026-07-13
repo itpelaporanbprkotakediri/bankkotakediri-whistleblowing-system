@@ -141,5 +141,30 @@ return [
     | This value is used to display the company name in the application.
     |
     */
+    'company' => [
+        'name' => env('COMPANY_NAME', 'PERUMDA BPR Bank Kota Kediri'),
+        'address' => [
+            'kantor_pusat' => 'Jl. Brawijaya No. 40 Ruko Brawijaya Blok A1–A2, Kel. Pocanan, Kota Kediri',
+            'kantor_cabang_ngawi' => 'Jl. Ir. Soekarno No. 2 Ngawi',
+        ],
+        'phone' => [
+            'kantor_pusat' => '0822-5727-2294',
+            'kantor_cabang_ngawi' => '0812-2673-3075',
+        ],
+        'social_media_links' => [
+            'facebook' => 'https://www.facebook.com/bankkotakediri/',
+            'instagram' => 'https://www.instagram.com/bankkotakediri/',
+            'whatsapp' => "https://wa.me/6282257272294",
+        ],
+        'email' => [
+            'pengaduan' => 'wbs@bprbankkotakediri.co.id',
+        ],
+        'jam_operasional' => [
+            'hari_mulai' => 'Senin',
+            'hari_selesai' => 'Jumat',
+            'jam_buka' => '08.00',
+            'jam_tutup' => '16.00'
+        ]
+    ],
     'company_name' => env('COMPANY_NAME', 'PERUMDA BPR Bank Kota Kediri'),
 ];

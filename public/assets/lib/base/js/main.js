@@ -248,6 +248,19 @@
                 }
             });
 
+            $(form).find('[type="email"]').each(function() {
+                const field = $(this);
+                const value = field.val();
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                
+                if (value && !emailPattern.test(value)) {
+                    field.addClass('is-invalid');
+                    isValid = false;
+                } else {
+                    field.removeClass('is-invalid');
+                }
+            });
+
             return isValid;
         },
 
